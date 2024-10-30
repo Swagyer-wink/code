@@ -4,9 +4,9 @@
 
 #the slots for the word will apper-kathryn(CONDITIONAL)
 
-#the player has to guess the first letter in the word-sawyer(LOOP)
+#the player has to guess a letter-sawyer(LOOP)
 
-#if its correct the letter will print and they will on to the second slot-sawyer(LOOP)
+#if its correct the letter will print and they will play again-sawyer(LOOP)
 
 #if its wrong then its a x will print on the screen and they have to guess again-sawyer(LOOP)(a function will be added)
 
