@@ -1,23 +1,19 @@
+#When game starts a random word is generated and a hang man board is put up- all-Kathryn(CONDITIONAL)
 
-#make player - Jayda (variable)
-#the players walks down a path and comes across a fork in the road- sawyer
+#then a hangman board is printed on the screen-kathryn(VARIABLE)
 
-#the player is on the road and has to make a choice of left or right- sawyer(Function)
+#the slots for the word will apper-kathryn(CONDITIONAL)
 
-#if right they go to hell where they have to fight there way out- sawyer
+#the player has to guess the first letter in the word-sawyer(LOOP)
 
-#if they choose left they go heaven where they have tea with god then get smited back to earth - sawyerr
+#if its correct the letter will print and they will on to the second slot-sawyer(LOOP)
 
-#the player runs into to two people ad have to chose which to trust in hell-Kathryn
+#if its wrong then its a x will print on the screen and they have to guess again-sawyer(LOOP)(a function will be added)
 
-#if they trust the first hell person hey gdrown in the near by river-Kathrn
+#if player 1 gets it wrong six times they die - jayda(CONDITIONALS)
 
-#if they trust the second hell person they get out of hell and into earth-Kathryn
+#if the player gets it all right they win - jayda(VARIABLE)(Add a function)
 
-#if the payer choses the first task they have to beat a bear - Sawyer-(loops)
-
- #the second task is to get sacrficed for the local cult - Jayaydada (conditionals)
-
-#if they complete the first they become the new king or they bec 
+# a play agian option is printed on the screen- jayda(VARIABLE)
  
- 
+
