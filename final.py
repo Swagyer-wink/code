@@ -10,7 +10,7 @@ print("  |")
 print("  |")
 print("_____________")
 #the slots for the word will apper-kathryn(CONDITIONAL)
-word = ['Nails','Sigma','Bussin','Skibdi','Big Back' , 'Rizz' , 'Fanthm Tax'] 
+word = ['nails','sigma','bussin','skibidi','big back' , 'rizz' , 'fanum tax'] 
 wordChoice = random.choice(word)
 for x in word:
   if x == random:
@@ -18,11 +18,15 @@ for x in word:
 #the player has to guess a letter-sawyer(LOOP)
 for words in word:
     print(input("guess a letter:"))
-
+letter = ["i", "n", "a", "l", "s", "b", "c", "k", "f", "t", "h", "m", "z", "u"]
+notletter = [""]
 #if its correct the letter will print and they will play again-sawyer(CONDITONAL)
-if 
+for letter in wordChoice:
+   print("letter it is in the word")
+   
 #if its wrong then its a x will print on the screen and they have to guess again-sawyer(CONDITONAL))(a function will be added)
-
+if letter != wordChoice:
+   print("THIS IS INCORRECT TRY AGAIN")
 #if player 1 gets it wrong six times they die - jayda(CONDITIONALS)
 guess = 6
 if guess <= 6:
