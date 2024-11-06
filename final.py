@@ -1,4 +1,5 @@
 #When game starts a random word is generated-Kathryn(function)
+
 print("Welcome to Brainrot Hangman!")
 import random 
  #then a hangman board is printed on the screen-kahtryn(VARIABLE)
@@ -11,8 +12,8 @@ print("  |")
 print("_____________")
 #the slots for the word will apper-kathryn(CONDITIONAL)
 word = ['nails','sigma','bussin','skibidi','big back' , 'rizz' , 'fanum tax'] 
-
-wordChoice = random.choice(word)
+def game(importrandom,random):
+   wordChoice = random.choice(word)
 for x in word:
   if x == random:
      print(x)
@@ -21,13 +22,13 @@ correctLetter = ["i", "d", "n", "a", "l", "s", "b", "c", "k", "f", "t", "m", "z"
 notletter = ["e", "h", "j", "o", "p", "y", "w", "q",]
 guess = 5
 finalGuess = 6
-for letter in word:
+for correctLetter in word:
   theGuess = [input("guess a letter:")]
   if theGuess == correctLetter:
     print("this is right")
   if theGuess != correctLetter:
     print("x\n", "this is incorrect try again")
-if finalGuess == wordChoice:
+if finalGuess:
    print("you got it")
 
 #if its correct the letter will print and they will play again-sawyer(CONDITONAL)
@@ -39,16 +40,16 @@ if finalGuess == wordChoice:
 if guess and finalGuess<= 6:
     print("you have used up all your guess\n")
 #if the player gets it all right they win - jayda(VARIABLE)(Add a function)
-if word == wordChoice:
+if word:
    print("you have won the game")
 
 #a play agian option is printed on the screen- jayda(VARIABLE)
 inp = [input("do you want to play again:")]
-yes = [inp("yes")]
-no = [inp("no")]
-if yes:
+
+
+if inp == "yes":
    print("click run again")
-else:
+elif inp == "no":
    print("get out of here")
  
 
