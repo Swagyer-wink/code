@@ -3,22 +3,16 @@
 print("Welcome to Brainrot Hangman!")
 import random 
 wordcheck =""
-win=0
-print("  ___________")  
-print("  |")
-print("  |")
-print("  |")
-print("  |")
-print("  |")
-print("_____________")
+win=0 
+things_left = 6
 
 def game():
     global things_left
 
     global guessuedLetters
     global choseWord
-    print("a new word was chose")
-    #then a hangman board is printed on the screen-kahtryn(VARIABLE)
+    print("a new word was chosen") 
+    #then a hangman board is printed on the screen-kahtryn(VARIABLE) 
     print("  ___________")  
     print("  |")
     print("  |")
@@ -27,14 +21,13 @@ def game():
     print("  |")
     print("_____________")
 #the slots for the word will apper-kathryn(CONDITIONAL)
-things_left = 6
-words = ["fanum tax", "sigma", "bussin", "skibidi", "big back", "rizz"] 
+words = ["fanum tax", "sigmas", "bussin", "skibidi", "big back", "rizz"] 
 word = game
 guessuedLetters = []
 choseWord = random.choice(words)
 wordcheck = ""
-def game():
-    global things_left_left
+def things():
+    global things_left
 
     global guessuedLetters
     global choseWord
@@ -44,7 +37,7 @@ def game():
     choseWord = random.choice(words)
     wordcheck = ""
     things_left = 6
-    game()
+    things()
 def restart():
     answer = input("Restart (y/n):")
     if answer == "y":
@@ -60,14 +53,15 @@ guess = 6
 for correctLetter in words:
    theGuess = input("guess a letter:")
 
-#if its correct the letter will print and they will play again-sawyer(CONDITONAL)
-   if theGuess in choseWord:
-      print("this is right")
-#if its wrong then its a x will print on the screen and they have to guess again-sawyer(CONDITONAL))(a function will be added)
+#if its correct the letter will print and they will play again-sawyer(CONDITONAL) 
+   if theGuess in choseWord:   
+      print("this is right") 
+#its wrong then its a x will print on the screen and they have to guess again-sawyer(CONDITONAL))(a function will be added)
+
    else:
-      print("x\n", "this is incorrect try again")
+       print("x\n", "this is incorrect try again")
 #if player 1 gets it wrong six times they die - jayda(CONDITIONALS)
-if guess<= 5:
+if guess<= 6:
     print("you have used up all your guess\n")
 #if the player gets it all right they win - jayda(VARIABLE)(Add a function)
 wordGuess = input("final guess is to guess a word:")
