@@ -1,6 +1,6 @@
 #When game starts a random word is generated-Kathryn(function)
 
-print("Welcome to Brainrot Hangman!")
+print("Welcome to Hangman!")
 import random 
 wordcheck =""
 win=0 
@@ -21,7 +21,7 @@ def game():
     print("  |")
     print("_____________")
 #the slots for the word will apper-kathryn(CONDITIONAL)
-words = ["fanum tax", "sigmas", "bussin", "skibidi", "big back", "rizz"] 
+words = ["Rose", "sigmas", "bussin", "Lavender", "tulip", "risk"] 
 word = game
 guessuedLetters = []
 choseWord = random.choice(words)
@@ -33,12 +33,16 @@ def things():
     global choseWord
     print("a new word was chose")
     
+    
+    
+    
     guessuedLetters = []
     choseWord = random.choice(words)
     wordcheck = ""
     things_left = 6
     things()
 def restart():
+    blank = ""
     answer = input("Restart (y/n):")
     if answer == "y":
         restart()
@@ -46,19 +50,60 @@ def restart():
         exit()
     restart()
 
+
+
+ 
+
 #the player has to guess a letter-sawyer(LOOP)
 correctLetter = ["i", "d", "r", "n", "a", "l", "s", "b", "c", "k", "f", "t", "m", "z", "u"]
 notLetter = ["e", "h", "j", "o", "p", "y", "w", "q"]
 guess = 6
-for correctLetter in words:
-   theGuess = input("guess a letter:")
+# for correctLetter in words:
+#kathryns code
+# blank = ""
+# for letter in choseWord:
+#     blank += "_ "
+choseLetters = list(choseWord)
+# print(blank)
+# for letter in choseLetters:
+#     theGuess = input("guess a letter:")
+#     # print (blank)
+#     if theGuess in choseLetters:
+#         new_blank = [letter if theGuess == letter else '_' for letter in choseLetters]
+#         print(" ".join(new_blank))
+#     else:
+#         print("bad guess try again")
+#         update_display = 0
+
+current_guess = ["_" for letter in choseLetters]
+print(" ".join(current_guess))
+
+wrong_guess = 0
+while wrong_guess <6:
+    theGuess = input("Choose a letter bro/sis: ")
+    if theGuess not in choseLetters:
+        print("The letter you picket is WRONG...try again")
+        if wrong_guess==5:
+            print("You've failed too many times! Please Leave! NOW")
+        wrong_guess+=1
+
+    else:
+        for i,letter in enumerate(choseLetters):
+            if letter == theGuess:
+                current_guess[i]=letter
+        print(" ".join(current_guess))
+        if "".join(current_guess)==choseWord:
+            print("NAILD IT!")   
+
+    
+ 
 
 #if its correct the letter will print and they will play again-sawyer(CONDITONAL) 
-   if theGuess in choseWord:   
+if theGuess in choseWord:   
       print("this is right") 
 #its wrong then its a x will print on the screen and they have to guess again-sawyer(CONDITONAL))(a function will be added)
 
-   else:
+else:
        print("x\n", "this is incorrect try again")
 #if player 1 gets it wrong six times they die - jayda(CONDITIONALS)
 if guess<= 6:
@@ -75,3 +120,4 @@ if answer == "y":
    print("rerun to replay")
 else:
    print("please leave")
+
